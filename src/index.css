@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: dodgerblue;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+section {
+    width: 100%;
+    max-width: 420px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 30px;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+.main_menu{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+
+}
+.new-search{
+    display: flex;
+    width: 100%;
+}
+.searchbtn{
+    margin: auto;
+    display: flex;
+    width: 12%;
+}
+.searchbar{
+    display: flex;
+    padding-bottom: 20px;
+    height: 50px;
+    border-radius: 30px;
+    width: 100%;
+}
+.post{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.post{
+    display: block;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+.sidebar_btn {
+    width: 10px;
+    height: 100%;
+    left: 5rem;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 20%;
+    height: auto;
+    margin-top: 4%;
+    border: 3px solid blue;
+    background-color: blue;
+    border-radius: 30px;
+    padding: 0.4rem;
+}
